@@ -1,0 +1,19 @@
+[package]
+name = "espscan"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+futures = "0.3"
+tokio = { version = "1", features = ["full"] }  # 使用 Tokio 异步运行时
+structopt = "0.3.26"
+ipnetwork = "0.21"
+colored = "3.0.0"
+colorful = "0.3.2"
+image_ascii = "0.1.1"
+winres = "0.1"
+
+
+[build-dependencies]
+winres = "0.1"
